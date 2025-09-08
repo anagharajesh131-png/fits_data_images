@@ -1,0 +1,189 @@
+# SIMPLE: 
+#   Indicates this is a standard FITS file format.
+
+# BITPIX: 
+#   Data type used to store the pixel values (−32 means floating-point values).
+
+# NAXIS, NAXIS1, NAXIS2, NAXIS3, NAXIS4: 
+#   Number of data dimensions (axes) and their size.
+#   - NAXIS1 and NAXIS2 → Spatial dimensions (image width and height in pixels).
+#   - NAXIS3 → Frequency axis (1 in this case).
+#   - NAXIS4 → Stokes axis (4 values: I, Q, U, V).
+
+# BMAJ, BMIN, BPA: 
+#   The beam parameters (shape of the instrument's point spread function).
+#   - BMAJ and BMIN → Beam major and minor axis size in degrees.
+#   - BPA → Beam position angle in degrees.
+
+# BTYPE: 
+#   Type of data (Intensity in this case).
+
+# OBJECT: 
+#   Name of the source → 3C75.
+
+# BUNIT: 
+#   Unit of brightness (not specified here, but commonly Jy/beam).
+
+# EQUINOX and RADESYS: 
+#   Coordinate system details → FK5 reference system, J2000 equinox.
+
+# CTYPE1, CTYPE2: 
+#   Type of coordinate axes:
+#   - CTYPE1: RA (Right Ascension) with SIN projection.
+#   - CTYPE2: DEC (Declination) with SIN projection.
+
+# CRVAL1, CRVAL2: 
+#   Reference coordinate values (RA and DEC of reference pixel).
+
+# CDELT1, CDELT2: 
+#   Pixel size in degrees (how much sky area one pixel covers).
+
+# CRPIX1, CRPIX2: 
+#   Pixel coordinates of the reference point in the image.
+
+# CUNIT1, CUNIT2: 
+#   Units of the coordinates → degrees.
+
+# CTYPE3 (FREQ), CRVAL3, CDELT3, CRPIX3, CUNIT3: 
+#   Frequency axis information → Observing frequency (~3 GHz).
+
+# CTYPE4 (STOKES), CRVAL4, CDELT4, CRPIX4: 
+#   Stokes axis → Describes which polarization parameter is in each slice (I, Q, U, V).
+
+# RESTFRQ: 
+#   Rest frequency of the observation (used for reference in analysis).
+
+# SPECSYS: 
+#   Reference frame for spectral measurements → Local Standard of Rest (LSRK).
+
+# TELESCOP: 
+#   Telescope used → EVLA (Expanded Very Large Array).
+
+# OBSERVER: 
+#   Name of the person who observed the source → Dr. Emmanuel Momjian.
+
+# DATE-OBS: 
+#   Date and time of observation.
+
+# TIMESYS: 
+#   Time system used → UTC.
+
+# OBSRA, OBSDEC: 
+#   RA and DEC of the observed target.
+
+# OBSGEO-X, Y, Z: 
+#   Location of the telescope in geocentric coordinates.
+
+# INSTRUME: 
+#   Instrument used → EVLA.
+
+# DATE: 
+#   Date when this FITS file was created or modified.
+
+# ORIGIN: 
+#   Software used → CASA (Common Astronomy Software Applications), version 5.6.0.
+
+# HISTORY: 
+#   Log of the processing steps done in CASA (includes info about masking, subimage extraction, etc.).
+
+
+
+
+
+Values from the FITS file
+
+SIMPLE: True
+BITPIX: -32
+NAXIS: 4
+NAXIS1: 211
+NAXIS2: 182
+NAXIS3: 1
+NAXIS4: 4
+EXTEND: True
+BSCALE: 1.0
+BZERO: 0.0
+BMAJ: 0.00675812986162
+BMIN: 0.005270233154297
+BPA: -35.92850494385
+BTYPE: Intensity
+OBJECT: 3C75
+BUNIT:
+EQUINOX: 2000.0
+RADESYS: FK5
+LONPOLE: 180.0
+LATPOLE: 6.018000000858
+PC1_1: 1.0
+PC2_1: 0.0
+PC3_1: 0.0
+PC4_1: 0.0
+PC1_2: 0.0
+PC2_2: 1.0
+PC3_2: 0.0
+PC4_2: 0.0
+PC1_3: 0.0
+PC2_3: 0.0
+PC3_3: 1.0
+PC4_3: 0.0
+PC1_4: 0.0
+PC2_4: 0.0
+PC3_4: 0.0
+PC4_4: 1.0
+CTYPE1: RA---SIN
+CRVAL1: 44.4276250005
+CDELT1: -0.0009444444444444
+CRPIX1: 110.0
+CUNIT1: deg
+CTYPE2: DEC--SIN
+CRVAL2: 6.018000000858
+CDELT2: 0.0009444444444444
+CRPIX2: 57.0
+CUNIT2: deg
+CTYPE3: FREQ
+CRVAL3: 3000000000.0
+CDELT3: 1026083849.071
+CRPIX3: 1.0
+CUNIT3: Hz
+CTYPE4: STOKES
+CRVAL4: 1.0
+CDELT4: 1.0
+CRPIX4: 1.0
+CUNIT4:
+PV2_1: 0.0
+PV2_2: 0.0
+RESTFRQ: 2998950914.254
+SPECSYS: LSRK
+ALTRVAL: -104872.6715772
+ALTRPIX: 1.0
+VELREF: 257
+COMMENT: casacore non-standard usage: 4 LSD, 5 GEO, 6 SOU, 7 GAL
+TELESCOP: EVLA
+OBSERVER: Dr. Emmanuel Momjian
+DATE-OBS: 2018-10-04T06:04:02.500000
+TIMESYS: UTC
+OBSRA: 44.4276250005
+OBSDEC: 6.018000000858
+OBSGEO-X: -1601156.673287
+OBSGEO-Y: -5041988.986066
+OBSGEO-Z: 3554879.236821
+INSTRUME: EVLA
+DISTANCE: 0.0
+DATE: 2025-09-04T04:57:18.377000
+ORIGIN: CASA 5.6.0-60
+HISTORY: CASA START LOGTABLE
+HISTORY: 2025-09-03T10:09:13 INFO SRCCODE='::image::putchunk'
+HISTORY: Ran ia.putchunk
+HISTORY: 2025-09-03T10:09:13 INFO SRCCODE='::image::putchunk'
+HISTORY: ia.putchunk(pixels="[...]", blc=[-1], inc=[1], list=false, locking=true,
+HISTORY: > replicate=false)
+HISTORY: 2025-09-03T10:09:13 INFO SRCCODE='::image::calcmask'
+HISTORY: Ran ia.calcmask
+HISTORY: 2025-09-03T10:09:13 INFO SRCCODE='::image::calcmask'
+HISTORY: ia.calcmask(mask=""3C75_final_large.pbcor.workdirectory/3C75_final_large
+HISTORY: >.pb.tt0">0.2", name="", asdefault=true)
+HISTORY: 2025-09-04T04:41:30 INFO SRCCODE='::image::subimage'
+HISTORY: Ran ia.subimage
+HISTORY: 2025-09-04T04:41:30 INFO SRCCODE='::image::subimage'
+HISTORY: ia.subimage(outfile="3C75_final_large.pbcor_cropped.image", region="pola
+HISTORY: >risation_01.crtf", mask=[], dropdeg=false, overwrite=false, list=true,
+HISTORY: >tretch=false, wantreturn=true, keepaxes=[])
+HISTORY: CASA END LOGTABLE
